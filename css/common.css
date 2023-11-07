@@ -1,0 +1,21 @@
+#logo{
+    height: 50px;
+    width: 100%;
+}
+
+#logo div{
+    float: left;
+    text-align: center;
+    width: 15%;
+    position: relative;
+    top:50%;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+    text-decoration: underline;
+}
