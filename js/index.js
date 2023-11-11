@@ -12,5 +12,5 @@ function MenuLayout(){
 }
 
 function openPage(page){
-    location.href = './'+page+'.html';
+    location.href = './'+page;
 }
