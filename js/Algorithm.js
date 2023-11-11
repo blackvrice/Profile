@@ -11,6 +11,6 @@ let Algorithm = {
 }
 Algorithm.xhttp.onreadystatechange = function(){
     if (this.readyState == 4 && this.status == 200) {
-        QuestDiv.innerHTML = this.responseText;
+        this.QuestDiv.innerHTML = this.responseText;
     }
 };
