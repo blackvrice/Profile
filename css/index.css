@@ -1,8 +1,29 @@
 #main{
     text-align: center;
-    width: 100%;
+    width: 80%;
+    margin: auto;
 }
-#main img{
+.SpaceDiv{
+    height: 250px;
+    border: 1px solid gray;
+}
+.Left{
+    float: left;
+}
+.Right{
+    float: right;
+}
+.Text{
+    width: 70%;
+    height: 250px;
+    margin: auto;
+}
+.Img{
+    width: 250px;
+    height: 250px;
+}
+.Img img{
+    margin: auto;
     width: 250px;
     height: 250px;
 }

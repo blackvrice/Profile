@@ -10,3 +10,7 @@ function MenuLayout(){
     div.appendChild(ul);
     document.body.appendChild(div);    
 }
+
+function openPage(page){
+    location.href = './'+page+'.html';
+}
