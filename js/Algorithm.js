@@ -1,11 +1,16 @@
-function openQuest(directory,quest){
-    let xhttp = new XMLHttpRequest();
-    let QuestDiv = document.getElementById('Quest');
-    xhttp.onreadystatechange = function(){
-        if (this.readyState == 4 && this.status == 200) {
-            QuestDiv.innerHTML = this.responseText;
-        }
-    };
-    xhttp.open('GET','./'+directory+'/'+quest+'.html');
-    xhttp.send();
+let Algorithm = {
+    xhttp : new XMLHttpRequest(),
+    QuestDiv : document.getElementById('Quest'),
+    openQuest : function(directory,quest){
+        this.xhttp.open('GET','./'+directory+'/'+quest+'.html');
+        this.xhttp.send();
+    },
+    openSource : function(){
+
+    }
 }
+Algorithm.xhttp.onreadystatechange = function(){
+    if (this.readyState == 4 && this.status == 200) {
+        QuestDiv.innerHTML = this.responseText;
+    }
+};
