@@ -6,6 +6,17 @@
     <script src="./js/Algorithm.js"></script>
     <link rel="stylesheet" href="./css/Algorithm.css">
     <link rel="stylesheet" href="./css/common.css">
+    <script>
+        window.addEventListener('load',event =>{
+            document.querySelectorAll('.Category').forEach(element =>{
+                element.addEventListener('click',e =>{
+                    let SubCategory = element.nextElementSibling.style;
+                    if(SubCategory.display != 'block')  SubCategory.display = 'block';
+                    else SubCategory.display = 'none';
+                });
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -27,6 +38,105 @@
         </div>
         <div>
             <a href="./Study.html">Study</a>
+        </div>
+    </div>
+    <div id = "CategoryLayout">
+        <div class="MainCategory">
+            Main
+        </div>
+        <div class="Category">
+            LEVLE 1
+        </div>
+        <div class="SubCategory" style="display: none;">
+            <ol>
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+                <li>d</li>
+                <li>e</li>
+                <li>f</li>
+            </ol>
+        </div>
+        <div class="Category">
+            LEVEL 2
+        </div>
+        <div class="SubCategory" style="display: none;">
+            <ol>
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+                <li>d</li>
+                <li>e</li>
+                <li>f</li>
+            </ol>
+        </div>
+        <div class="Category">
+            LEVEL 3
+        </div>
+        <div class="SubCategory" style="display: none;">
+            <ol>
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+                <li>d</li>
+                <li>e</li>
+                <li>f</li>
+            </ol>
+        </div>
+        <div class="Category">
+            LEVEL 4
+        </div>
+        <div class="SubCategory" style="display: none;">
+            <ol>
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+                <li>d</li>
+                <li>e</li>
+                <li>f</li>
+            </ol>
+        </div>
+        <div class="Category">
+            LEVEL 5
+        </div>
+        <div class="SubCategory" style="display: none;">
+            <ol>
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+                <li>d</li>
+                <li>e</li>
+                <li>f</li>
+            </ol>
+        </div>
+        <div class="Category">
+            LEVEL 6
+        </div>
+        <div class="SubCategory" style="display: none;">
+            <ol>
+                <li>a</li>
+                <li>b</li>
+                <li>c</li>
+                <li>d</li>
+                <li>e</li>
+                <li>f</li>
+            </ol>
+        </div>
+    </div>
+    <div id="MainDiv">
+    </div>
+    <div id="SourceDiv" style="display: none;">
+        <div id="Quest">
+            문제
+        </div>
+        <div id="CodeButtonDiv">
+            <button id="C++">C++</button>
+            <button id="JAVA">JAVA</button>
+            <button id="C#">C#</button>
+            <button id="Python">Python</button>
+            <button id="Kotlin">Kotlin</button>
+        </div>
+        <div id="CodeDiv">
         </div>
     </div>
 </body>

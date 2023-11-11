@@ -1,3 +1,32 @@
-#logo {
-    height: 100px;
+#CategoryLayout{
+    width: 100px;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    background-color: beige;
+    float: left;
+}
+.Category:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.SubCategory{
+    text-align: left;
+    text-decoration: none;
+}
+.SubCategory li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.Class{
+    color: #19a019;
+}
+.reserved{
+    color: #01017a;
+}
+.String{
+    color: #744801;
+}
+.function{
+    color: #b1b103;
 }
