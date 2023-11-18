@@ -1,10 +1,10 @@
 let Algorithm = {
     xhttp : new XMLHttpRequest(),
-    QuestDiv : document.getElementById('Quest'),
     openQuest : function(quest){
+        var div = document.getElementById('Quest');
         this.xhttp.onreadystatechange = function(){
             if (this.readyState == 4 && this.status == 200) {
-                Algorithm.QuestDiv.innerHTML = this.responseText;
+                div.innerHTML = this.responseText;
             }
         };
         this.xhttp.open('GET','./Algorithm/'+quest+'.html');
