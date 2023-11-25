@@ -18,20 +18,10 @@ let Algorithm = {
         this.xhttp.send();
     },
     openSource : function(languge){
-        let script = document.getElementById('source');
-        let url = '';
-        switch (languge){
-            case "cpp":
-                url = this.cpp;
-                break;
-            case "java":
-                break;
-            case "cs":
-                break;
-            case "python":
-                break;
-            case "kotlin":
-                break;
-        }
+        let divClass = document.querySelectorAll('.language');
+        divClass.forEach(div => {
+            if(div.id == languge) div.style.display = 'block';
+            else div.style.display = none;
+        });
     }
 }
