@@ -1,29 +1,23 @@
 #main{
     text-align: center;
-    width: 1000px;
+    width: 1260px;
     margin: auto;
+    text-align: center;
 }
 .SpaceDiv{
-    height: 250px;
+    width: 250px;
+    height: 400px;
     border: 1px solid gray;
-}
-.Left{
     float: left;
-}
-.Right{
-    float: right;
 }
 .Text{
     width: 70%;
-    height: 250px;
     margin: auto;
 }
 .Img{
     width: 250px;
-    height: 250px;
 }
 .Img img{
     margin: auto;
     width: 250px;
-    height: 250px;
 }
