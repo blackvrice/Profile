@@ -17,7 +17,7 @@ let Algorithm = {
         this.xhttp.open('GET','./Algorithm/'+quest+'.html');
         this.xhttp.send();
     },
-    openQuest : function(languge){
+    openSource : function(languge){
         let script = document.getElementById('source');
         let url = '';
         switch (languge){
@@ -33,6 +33,5 @@ let Algorithm = {
             case "kotlin":
                 break;
         }
-        
     }
 }
