@@ -1,7 +1,5 @@
 #CategoryLayout{
-    width: 20%;
     text-align: center;
-    height: 100%;
     position: relative;
     background-color: beige;
     float: left;
@@ -35,9 +33,5 @@ html{
     height: 100%;
 }
 body{
-    height: 100%;
-}
-#Quest{
-    width: 20%;
     height: 100%;
 }
