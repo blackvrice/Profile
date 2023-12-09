@@ -1,23 +1,48 @@
-#main{
+#mainLogo {
+    text-align: center;
+    width: 750px;
+    height: 500px;
+    background-image: url(../Resource/mainLogo.jpg);
+    background-size: 750px;
+    margin: auto;
+    color: white;
+}
+
+#mainLogo div{
+    top: 35%;
+    font-size: 50px;
+    position: relative;
+    font-weight: bold;
+}
+
+#main {
     text-align: center;
     width: 1260px;
     margin: auto;
     text-align: center;
 }
-.SpaceDiv{
+
+.SpaceDiv {
     width: 250px;
-    height: 400px;
+    height: 200px;
     border: 1px solid gray;
     float: left;
 }
-.Text{
+
+.SpaceDiv img {
+    height: 200px;
+}
+
+.Text {
     width: 70%;
     margin: auto;
 }
-.Img{
+
+.Img {
     width: 250px;
 }
-.Img img{
+
+.Img img {
     margin: auto;
     width: 250px;
 }

@@ -1,25 +1,32 @@
 #CategoryLayout{
     width:200px;
     position: relative;
-    background-color: beige;
     float: left;
+}
+#CategoryLayout table{
+    width: 200px;
+    border-collapse: collapse;
+    border: 1px solid #fff;
+}
+.Category{
+    width: 200px;
+    background: rgba(6, 124, 193, 0.997)
 }
 .Category:hover{
     cursor: pointer;
     text-decoration: underline;
 }
 .SubCategory{
-    text-align: left;
-    text-decoration: none;
+    background: rgb(12, 179, 151);
+    text-align: center;
 }
-.SubCategory li:hover{
+.SubCategory td{
+    width: 200px;
+    border: 1px solid #fff;
+}
+.SubCategory td:hover{
     cursor: pointer;
     text-decoration: underline;
-}
-.SubCategory li{
-    overflow:hidden;
-    text-overflow:ellipsis;
-    white-space:nowrap;
 }
 .Class{
     color: #19a019;
