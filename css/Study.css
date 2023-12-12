@@ -2,10 +2,7 @@
     width: 150px;
     text-align: center;
 }
-#Layout table{
-    width: 150px;
-    border-collapse: collapse;
-}
+
 #Layout table th{
     background: #ffb555;
     border: 1px solid gray;

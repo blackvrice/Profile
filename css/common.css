@@ -24,3 +24,43 @@ a:hover{
     color: red;
     text-decoration: underline;
 }
+
+#CategoryLayout{
+    width:200px;
+    position: relative;
+    float: left;
+}
+#CategoryLayout table{
+    width: 200px;
+    border-collapse: collapse;
+    border: 1px solid #fff;
+}
+.Category{
+    background: #ffb555;
+    border: 1px solid gray;
+}
+.Category:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.SubCategory{
+    background: #dfc6ff;
+    border: 1px solid gray;
+}
+.SubCategory td{
+    width: 200px;
+    border: 1px solid #000;
+}
+.SubCategory td:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#Layout{
+    float: left;
+}
+
+#Layout table{
+    width: 150px;
+    border-collapse: collapse;
+}
