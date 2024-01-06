@@ -3,19 +3,12 @@
 
 <head>
     <title>Seongsik Algorithm</title>
+    <script src="./js/common.js"></script>
     <script src="./js/Algorithm.js"></script>
     <link rel="stylesheet" href="./css/Algorithm.css">
     <link rel="stylesheet" href="./css/common.css">
     <script>
-        window.addEventListener('load',event =>{
-            document.querySelectorAll('.Category').forEach(element =>{
-                element.addEventListener('click',e =>{
-                    let SubCategory = element.nextElementSibling.style;
-                    if(SubCategory.display != 'block')  SubCategory.display = 'block';
-                    else SubCategory.display = 'none';
-                });
-            });
-        });
+
     </script>
 </head>
 
@@ -40,107 +33,89 @@
             <a href="./Study">Study</a>
         </div>
     </div>
-    <div id = "CategoryLayout">
-        <div class="MainCategory">
-            Main
-        </div>
+    <div id = "Layout">
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 1</th> 
+                    <th>LEVEL 1</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
-                <tr><td onclick="Algorithm.openQuest('2557')">Hello World</td></tr>
-                <tr><td onclick="Algorithm.openQuest('1000')">A+B</td></tr>
-                <tr><td onclick="Algorithm.openQuest('1001')">A-B</td></tr>
-                <tr><td onclick="Algorithm.openQuest('10998')">A*B</td></tr>
-                <tr><td onclick="Algorithm.openQuest('1008')">A/B</td></tr>
-                <tr><td onclick="Algorithm.openQuest('10869')">사칙연산</td></tr>
-                <tr><td onclick="Algorithm.openQuest('10926')">??!</td></tr>
-                <tr><td onclick="Algorithm.openQuest('18108')">1998년생인 내가 태국에서는 2541년생?!</td></tr>
-                <tr><td onclick="Algorithm.openQuest('10430')">나머지</td></tr>
-                <tr><td onclick="Algorithm.openQuest('2588')">곱셈</td></tr>
-                <tr><td onclick="Algorithm.openQuest('11382')">꼬마 정민</td></tr>
-                <tr><td onclick="Algorithm.openQuest('10171')">고양이</td></tr>
-                <tr><td onclick="Algorithm.openQuest('10172')">개</td></tr>
+                <tr><td onclick="Category.openQuest('2557')">Hello World</td></tr>
+                <tr><td onclick="Category.openQuest('1000')">A+B</td></tr>
+                <tr><td onclick="Category.openQuest('1001')">A-B</td></tr>
+                <tr><td onclick="Category.openQuest('10998')">A*B</td></tr>
+                <tr><td onclick="Category.openQuest('1008')">A/B</td></tr>
+                <tr><td onclick="Category.openQuest('10869')">사칙연산</td></tr>
+                <tr><td onclick="Category.openQuest('10926')">??!</td></tr>
+                <tr><td onclick="Category.openQuest('18108')">1998년생인 내가 태국에서는 2541년생?!</td></tr>
+                <tr><td onclick="Category.openQuest('10430')">나머지</td></tr>
+                <tr><td onclick="Category.openQuest('2588')">곱셈</td></tr>
+                <tr><td onclick="Category.openQuest('11382')">꼬마 정민</td></tr>
+                <tr><td onclick="Category.openQuest('10171')">고양이</td></tr>
+                <tr><td onclick="Category.openQuest('10172')">개</td></tr>
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 2</th> 
+                    <th>LEVEL 2</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
-                <tr><td onclick="Algorithm.openQuest('1330')">두 수 비교하기</td></tr>
-                <tr><td onclick="Algorithm.openQuest('9498')">시험 성적</td></tr>
-                <tr><td onclick="Algorithm.openQuest('2753')">윤년</td></tr>
-                <tr><td onclick="Algorithm.openQuest('14681')">사분면 고르기</td></tr>
-                <tr><td onclick="Algorithm.openQuest('2884')">알람 시계</td></tr>
-                <tr><td onclick="Algorithm.openQuest('2525')">오븐 시계</td></tr>
-                <tr><td onclick="Algorithm.openQuest('2480')">주사위 시계</td></tr>
+                <tr><td onclick="Category.openQuest('1330')">두 수 비교하기</td></tr>
+                <tr><td onclick="Category.openQuest('9498')">시험 성적</td></tr>
+                <tr><td onclick="Category.openQuest('2753')">윤년</td></tr>
+                <tr><td onclick="Category.openQuest('14681')">사분면 고르기</td></tr>
+                <tr><td onclick="Category.openQuest('2884')">알람 시계</td></tr>
+                <tr><td onclick="Category.openQuest('2525')">오븐 시계</td></tr>
+                <tr><td onclick="Category.openQuest('2480')">주사위 시계</td></tr>
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 4</th> 
+                    <th>LEVEL 4</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
-                <tr><td onclick="Algorithm.openQuest('2739')">구구단</td></tr>
-                <tr><td onclick="Algorithm.openQuest('10950')">A+B - 3</td></tr>
-                <tr><td onclick="Algorithm.openQuest('8393')">합</td></tr>
-                <tr><td onclick="Algorithm.openQuest('25304')">영수증</td></tr>
-                <tr><td onclick="Algorithm.openQuest('25314')">코딩은 체육과목 입니다</td></tr>
-                <tr><td onclick="Algorithm.openQuest('15552')">빠른 A+B</td></tr>
-                <tr><td onclick="Algorithm.openQuest('11022')">A+B - 7</td></tr>
-                <tr><td onclick="Algorithm.openQuest('2438')">A+B - 8</td></tr>
-                <tr><td onclick="Algorithm.openQuest('2438')">별찍기 - 1</td></tr>
-                <tr><td onclick="Algorithm.openQuest('2439')">별찍기 - 2</td></tr>
-                <tr><td onclick="Algorithm.openQuest('10952')">A+B - 5</td></tr>
-                <tr><td onclick="Algorithm.openQuest('10951')">A+B - 4</td></tr>
+                <tr><td onclick="Category.openQuest('2739')">구구단</td></tr>
+                <tr><td onclick="Category.openQuest('10950')">A+B - 3</td></tr>
+                <tr><td onclick="Category.openQuest('8393')">합</td></tr>
+                <tr><td onclick="Category.openQuest('25304')">영수증</td></tr>
+                <tr><td onclick="Category.openQuest('25314')">코딩은 체육과목 입니다</td></tr>
+                <tr><td onclick="Category.openQuest('15552')">빠른 A+B</td></tr>
+                <tr><td onclick="Category.openQuest('11022')">A+B - 7</td></tr>
+                <tr><td onclick="Category.openQuest('2438')">A+B - 8</td></tr>
+                <tr><td onclick="Category.openQuest('2438')">별찍기 - 1</td></tr>
+                <tr><td onclick="Category.openQuest('2439')">별찍기 - 2</td></tr>
+                <tr><td onclick="Category.openQuest('10952')">A+B - 5</td></tr>
+                <tr><td onclick="Category.openQuest('10951')">A+B - 4</td></tr>
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 4</th> 
+                    <th>LEVEL 4</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
-                <tr><td onclick="Algorithm.openQuest('10807')">개수 세기</td></tr>
-                <tr><td onclick="Algorithm.openQuest('10871')">X보다 작은 수</td></tr>
-                <tr><td onclick="Algorithm.openQuest('10818')">최소, 최대</td></tr>
-                <tr><td onclick="Algorithm.openQuest('2562')">최댓값</td></tr>
-                <tr><td onclick="Algorithm.openQuest('10810')">공 넣기</td></tr>
-                <tr><td onclick="Algorithm.openQuest('10813')">공 바꾸기</td></tr>
-                <tr><td onclick="Algorithm.openQuest('5597')">과제 안 내신 분..?</td></tr>
-                <tr><td onclick="Algorithm.openQuest('3052')">나머지</td></tr>
-                <tr><td onclick="Algorithm.openQuest('10811')">바구니 뒤집기</td></tr>
-                <tr><td onclick="Algorithm.openQuest('1546')">평균</td></tr>
+                <tr><td onclick="Category.openQuest('10807')">개수 세기</td></tr>
+                <tr><td onclick="Category.openQuest('10871')">X보다 작은 수</td></tr>
+                <tr><td onclick="Category.openQuest('10818')">최소, 최대</td></tr>
+                <tr><td onclick="Category.openQuest('2562')">최댓값</td></tr>
+                <tr><td onclick="Category.openQuest('10810')">공 넣기</td></tr>
+                <tr><td onclick="Category.openQuest('10813')">공 바꾸기</td></tr>
+                <tr><td onclick="Category.openQuest('5597')">과제 안 내신 분..?</td></tr>
+                <tr><td onclick="Category.openQuest('3052')">나머지</td></tr>
+                <tr><td onclick="Category.openQuest('10811')">바구니 뒤집기</td></tr>
+                <tr><td onclick="Category.openQuest('1546')">평균</td></tr>
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 5</th> 
-                </tr>
-            </thead>
-            <tbody class="SubCategory" style="display: none;">
-                    <tr><td>a</td></tr>
-                    <tr><td>b</td></tr>
-                    <tr><td>c</td></tr>
-                    <tr><td>d</td></tr>
-                    <tr><td>e</td></tr>
-                    <tr><td>f</td></tr>
-            </tbody>
-        </table>
-        <table>
-            <thead class="Category"> 
-                <tr>
-                    <th>LEVEL 6</th> 
+                    <th>LEVEL 5</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
@@ -153,9 +128,9 @@
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 7</th> 
+                    <th>LEVEL 6</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
@@ -168,9 +143,9 @@
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 8</th> 
+                    <th>LEVEL 7</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
@@ -183,9 +158,9 @@
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 9</th> 
+                    <th>LEVEL 8</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
@@ -198,9 +173,9 @@
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 10</th> 
+                    <th>LEVEL 9</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
@@ -213,9 +188,9 @@
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 11</th> 
+                    <th>LEVEL 10</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
@@ -228,9 +203,9 @@
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 12</th> 
+                    <th>LEVEL 11</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
@@ -243,9 +218,9 @@
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 13</th> 
+                    <th>LEVEL 12</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
@@ -258,9 +233,9 @@
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 14</th> 
+                    <th>LEVEL 13</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
@@ -273,9 +248,9 @@
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 15</th> 
+                    <th>LEVEL 14</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
@@ -288,9 +263,9 @@
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 16</th> 
+                    <th>LEVEL 15</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
@@ -303,9 +278,9 @@
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 27</th> 
+                    <th>LEVEL 16</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
@@ -318,9 +293,9 @@
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 28</th> 
+                    <th>LEVEL 27</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
@@ -333,9 +308,9 @@
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 19</th> 
+                    <th>LEVEL 28</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
@@ -348,9 +323,9 @@
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 20</th> 
+                    <th>LEVEL 19</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
@@ -363,9 +338,9 @@
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 21</th> 
+                    <th>LEVEL 20</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
@@ -378,9 +353,9 @@
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 22</th> 
+                    <th>LEVEL 21</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
@@ -393,9 +368,9 @@
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 23</th> 
+                    <th>LEVEL 22</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
@@ -408,9 +383,9 @@
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 24</th> 
+                    <th>LEVEL 23</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
@@ -423,9 +398,9 @@
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 25</th> 
+                    <th>LEVEL 24</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
@@ -438,9 +413,9 @@
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 26</th> 
+                    <th>LEVEL 25</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
@@ -453,9 +428,9 @@
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 27</th> 
+                    <th>LEVEL 26</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
@@ -468,9 +443,9 @@
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 28</th> 
+                    <th>LEVEL 27</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
@@ -483,9 +458,9 @@
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 29</th> 
+                    <th>LEVEL 28</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
@@ -498,9 +473,9 @@
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 30</th> 
+                    <th>LEVEL 29</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
@@ -513,9 +488,9 @@
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 31</th> 
+                    <th>LEVEL 30</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
@@ -528,9 +503,24 @@
             </tbody>
         </table>
         <table>
-            <thead class="Category"> 
+            <thead class="Category">
                 <tr>
-                    <th>LEVEL 32</th> 
+                    <th>LEVEL 31</th>
+                </tr>
+            </thead>
+            <tbody class="SubCategory" style="display: none;">
+                    <tr><td>a</td></tr>
+                    <tr><td>b</td></tr>
+                    <tr><td>c</td></tr>
+                    <tr><td>d</td></tr>
+                    <tr><td>e</td></tr>
+                    <tr><td>f</td></tr>
+            </tbody>
+        </table>
+        <table>
+            <thead class="Category">
+                <tr>
+                    <th>LEVEL 32</th>
                 </tr>
             </thead>
             <tbody class="SubCategory" style="display: none;">
