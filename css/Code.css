@@ -1,6 +1,6 @@
 .code{
-    background: black;
     color: wheat;
+    border-top: 1px solid gold;
 }
 .preprocessor{
     color: darkorange;
@@ -28,4 +28,10 @@
 }
 .grammer{
     color: darkgray;
+}
+.language{
+    border: 1px solid black;
+    border-radius: 10px;
+    background: black;
+    color: white;
 }
