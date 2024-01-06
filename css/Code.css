@@ -35,3 +35,13 @@
     background: black;
     color: white;
 }
+table{
+    text-align: center;
+    border: 1px solid white;
+}
+th{
+    border: 1px solid white;
+}
+td{
+    border: 1px solid white;
+}
