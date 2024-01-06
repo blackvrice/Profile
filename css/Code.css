@@ -1,0 +1,31 @@
+.code{
+    background: black;
+    color: wheat;
+}
+.preprocessor{
+    color: darkorange;
+}
+.package{
+    color:blueviolet;
+}
+.variable{
+    color: darkturquoise;
+}
+.function{
+    color:darkgoldenrod;
+}
+.class{
+    color:darkcyan;
+}
+.string{
+    color: darkred;
+}
+.comment{
+    color: darkgreen;
+}
+.access{
+    color: darksalmon;
+}
+.grammer{
+    color: darkgray;
+}
