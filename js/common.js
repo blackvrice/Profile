@@ -36,3 +36,11 @@ window.addEventListener('load',event =>{
         });
     });
 });
+
+
+function openCode(langauge){
+    document.querySelectorAll('.language').forEach((value) =>{
+        value.style.display = "";
+    })
+    document.getElementById(langauge).style.display='block';
+}
