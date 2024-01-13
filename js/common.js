@@ -18,12 +18,11 @@ let Category = {
         this.xhttp.open('GET','./'+this.page+'/'+quest+'.html');
         this.xhttp.send();
     },
-    openSource : function(languge){
-        let divClass = document.querySelectorAll('.language');
-        divClass.forEach(div => {
-            if(div.id == languge) div.style.display = 'block';
-            else div.style.display = none;
-        });
+    openSource : function(langauge){
+        document.querySelectorAll('.language').forEach((value) =>{
+            value.style.display = "";
+        })
+        document.getElementById(langauge).style.display='block';
     }
 }
 
@@ -36,11 +35,3 @@ window.addEventListener('load',event =>{
         });
     });
 });
-
-
-function openCode(langauge){
-    document.querySelectorAll('.language').forEach((value) =>{
-        value.style.display = "";
-    })
-    document.getElementById(langauge).style.display='block';
-}
