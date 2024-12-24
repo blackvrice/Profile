@@ -17,13 +17,6 @@ let Category = {
         };
         this.xhttp.open('GET','./'+this.page+'/'+quest+'.html');
         this.xhttp.send();
-    },
-    openSource : function(languge){
-        let divClass = document.querySelectorAll('.language');
-        divClass.forEach(div => {
-            if(div.id == languge) div.style.display = 'block';
-            else div.style.display = none;
-        });
     }
 }
 

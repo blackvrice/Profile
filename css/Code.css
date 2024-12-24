@@ -1,0 +1,48 @@
+.code{
+    color: wheat;
+    border-top: 1px solid gold;
+}
+.preprocessor{
+    color: darkorange;
+}
+.package{
+    color:blueviolet;
+}
+.variable{
+    color: darkturquoise;
+}
+.function{
+    color:darkgoldenrod;
+}
+.class{
+    color:darkcyan;
+}
+.string{
+    color: darkred;
+}
+.comment{
+    color: darkgreen;
+}
+.access{
+    color: darksalmon;
+}
+.grammer{
+    color: darkgray;
+}
+.language{
+    border: 1px solid black;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    display: none;
+}
+table{
+    text-align: center;
+    border: 1px solid white;
+}
+th{
+    border: 1px solid white;
+}
+td{
+    border: 1px solid white;
+}
