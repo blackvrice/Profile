@@ -3,12 +3,28 @@
 
 <head>
     <title>Seongsik Portfolio</title>
-    <script src="Portfolio.js"></script>
+    <script src="./js/Portfolio.js"></script>
     <link rel="stylesheet" href="./css/Portfolio.css">
     <link rel="stylesheet" href="./css/common.css">
+    <script>
+        document.addEventListener("DOMContentLoaded",(e) => {
+            addEvent("javascript");
+            addEvent("sql");
+            console.log("test");
+        });
+
+        function addEvent(id){
+            document.getElementById(id).addEventListener("click",(e) => {
+                let attrSkill = document.querySelectorAll(".attrSkill")
+                for(let a of attrSkill){
+                    a.style.display = "none";
+                }
+                document.getElementById("attr"+id).style.display="block";
+            })
+        }
+
+    </script>
 </head>
-
-
 <body>
     <div id="logo">
         <div>
@@ -38,8 +54,33 @@
         </div>
         <div>
             <h1>SKILL</h1>
-            <h3>langauge</h3>
-            <p>C++, C#, JAVA, javascript, python, kotlin</p>
+            <img class="skill" title="c++" src="./Resource/c++.png">
+            <img class="skill" title="c#" src="./Resource/csharp.png">
+            <img class="skill" title="Java" src="./Resource/java.png">
+            <img class="skill" title="JavaScript" id="javascript" src="./Resource/js.png">
+            <img class="skill" title="Python" src="./Resource/python.png">
+            <img class="skill" title="Kotlin" src="./Resource/Kotlin.png">
+            <img class="skill" title="SQL" id="sql" src="./Resource/sql.png">
+            <div class="attrSkill" id="attrjavascript" style="display: none;">
+                <img class="skill" title="Node.Js" src="./Resource/nodejs.png">
+                <img class="skill" title="express" src="./Resource/express.png">
+                <img class="skill" title="React" src="./Resource/react.png">
+            </div>
+            <div class="attrSkill" id="attrsql" style="display: none;">
+                <img class="skill" title="Oracle SQL" src="./Resource/oracle.png">
+                <img class="skill" title="PostgreSQL" src="./Resource/postgresql.png">
+            </div>
+        </div>
+        <div>
+            <h1>Career</h1>
+            <p>
+                <b>위시정보기술</b> <span style="float:right;">2022.08 ~ 2023.03</span><br>
+                사용 기술 : Java, Spring, Jsp, Oracle SQL,  PostgreSql, javascript
+            </p>
+            <p>
+                <b>노리시스템</b> <span style="float:right;">2023.04 ~ 2024.11</span><br>
+                사용 기술 : Java, Spring, Jsp, Oracle SQL, PostgreSql, javascript
+            </p>
         </div>
     </div>
 
